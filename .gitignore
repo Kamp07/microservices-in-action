@@ -1,0 +1,60 @@
+Skip to content
+GitLab
+S
+stc_22_22_sidikov_homeworks
+Project information
+Repository
+Issues
+0
+Merge requests
+0
+CI/CD
+Deployments
+Packages and registries
+Monitor
+Analytics
+Wiki
+Snippets
+
+Close sidebar
+Open sidebar
+Sidikov Marsel
+stc_22_22_sidikov_homeworks
+master
+stc_22_22_sidikov_homeworks
+.gitignore
+user avatar
+add readme and gitignore
+Marsel Sidikov authored 1 day ago
+9100de75
+.gitignore
+416 bytes
+node_modules
+*.class
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+# Package Files #
+*.jar
+*.war
+*.ear
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+.settings/
+.project
+.classpath
+.springBeans
+**/target/
+/commit.txt
+/*/logs/
+/*/wrk/
+effective-pom.xml
+effective-settings.xml
+/*/.gwt/
+.cache
+.idea/
+*.iml
+*.log
+*.lck
+*.jar
+*/dependency-reduced-pom.xml
+.DS_Store
