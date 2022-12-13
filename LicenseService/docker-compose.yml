@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  licensingservice:
+    image: kampot-media_license-service
+    ports:
+    - "8080:8080"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=dev"
+    networks:
+      backend:
+        aliases:
+          - "licenseService"
+networks:
+  backend:
+    driver: bridge

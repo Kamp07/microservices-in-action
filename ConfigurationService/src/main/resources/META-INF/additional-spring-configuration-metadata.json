@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "spring.profiles.cloud.config.server.native.search-locations",
+      "type": "java.lang.String",
+      "description": "Description for spring.profiles.cloud.config.server.native.search-locations."
+    },
+    {
+      "name": "spring.profiles.cloud.config.server.git.uri",
+      "type": "java.lang.String",
+      "description": "Description for spring.profiles.cloud.config.server.git.uri."
+    }
+  ] }

@@ -1,0 +1,16 @@
+FROM eclipse-temurin:19-jdk as build
+LABEL maintainer="Kirill Kiselev"
+WORKDIR application
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} application.jar
+RUN java -Djarmode=layertools -jar application.jar extract
+
+FROM eclipse-temurin:19-jdk
+WORKDIR application
+COPY --from=build application/dependencies/ ./
+COPY --from=build application/spring-boot-loader/ ./
+COPY --from=build application/snapshot-dependencies/ ./
+COPY --from=build application/application/ ./
+
+# запустить приложение
+ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
